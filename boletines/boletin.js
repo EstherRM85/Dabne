@@ -1,14 +1,9 @@
-/*var aboletines = document.getElementsByTagName('h3');
+document.querySelectorAll('.ablt').forEach(fecha => {
+    fecha.addEventListener('click', event => {
+        document.querySelectorAll('.lblt').forEach(boletin => {
+            boletin.style.display = 'none';
+        })
+        fecha.nextElementSibling.style.display = 'inline';
 
-
-
-aboletines.forEach(funtion() {
-    /*aboletin.onclick = function() {
-        var boletin = document.getElementById('lblt2019');
-        boletin.style.display = 'inline';
-    }
-});*/
-function mostrarBoletines(){
-	document.getElementById('lblt2019').style.display = 'block';
-}
-
+    })
+})
